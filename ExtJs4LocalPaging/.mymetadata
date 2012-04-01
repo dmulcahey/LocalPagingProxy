@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ExtJs4LocalPaging"
+  id="myeclipse.1332329466786"
+  context-root="/ExtJs4LocalPaging"
+  j2ee-spec="5.0"
+  archive="ExtJs4LocalPaging.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

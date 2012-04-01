@@ -1,0 +1,56 @@
+{
+    "name": "LocalPagingDemo",
+    "settings": {
+        "urlPrefix": "",
+        "directAPI": "",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "exportPath": "C:/Workspaces/MiscProjects/ExtJs4LocalPaging/SenchaDesigner",
+        "extPath": "http://extjs.cachefly.net/ext-4.0.2a/",
+        "senchaIoKey": "",
+        "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "genTimestamps": false,
+        "saveOnDeploy": false,
+        "appName": "MyApp",
+        "mapsAPI": "http://maps.google.com/maps/api/js?sensor=true",
+        "cssPath": ""
+    },
+    "xdsVersion": "2.0.0",
+    "xdsBuild": "311",
+    "framework": "ext40",
+    "topInstanceFileMap": {
+        "7235d29b-8f53-4513-a3ef-b673404a0951": {
+            "paths": [
+                "metadata/view/ApplicationViewport",
+                "app/view/override/ApplicationViewport.js",
+                "app/view/ApplicationViewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "ApplicationViewport"
+        },
+        "41153a7c-89ba-402f-8feb-3c133d352eed": {
+            "paths": [
+                "metadata/model/SimpleModel",
+                "app/model/override/SimpleModel.js",
+                "app/model/SimpleModel.js"
+            ],
+            "className": "SimpleModel"
+        },
+        "6c954abd-1ea7-419f-8256-6e0e197a25f1": {
+            "paths": [
+                "metadata/store/LocalPagingStore",
+                "app/store/override/LocalPagingStore.js",
+                "app/store/LocalPagingStore.js"
+            ],
+            "className": "LocalPagingStore"
+        }
+    },
+    "expandedState": {
+        "data": true,
+        "model": true,
+        "component": true,
+        "controller": true
+    }
+}

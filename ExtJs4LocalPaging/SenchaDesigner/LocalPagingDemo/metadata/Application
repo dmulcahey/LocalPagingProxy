@@ -1,0 +1,27 @@
+{
+    "id": "ExtBox1-ext-gen2484",
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "SimpleModel"
+        ],
+        "stores": [
+            "LocalPagingStore"
+        ],
+        "views": [
+            "ApplicationViewport"
+        ],
+        "designer|launch": "",
+        "autoCreateViewport": true,
+        "name": "LocalPagingDemo"
+    },
+    "customConfigs": [],
+    "designerId": "application",
+    "$viewOrder": 0,
+    "expanded": true
+}
