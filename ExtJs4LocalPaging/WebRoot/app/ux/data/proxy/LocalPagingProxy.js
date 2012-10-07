@@ -1,4 +1,4 @@
-Ext.define('Ext.ux.data.proxy.LocalPagingProxy', {
+Ext.define('Ext.extjsExtensions.LocalPagingProxy', {
     extend: 'Ext.data.proxy.Memory',
     alias: 'proxy.localpagingproxy',
     requires: [
@@ -35,22 +35,27 @@ Ext.define('Ext.ux.data.proxy.LocalPagingProxy', {
     },
     
     handleRead: function(operation, callback, scope){
-    	var me = this, result = {
-        	    total: me.recordCache.getTotalCount()
-        	},
+    	var me = this, result = {},
         	sorters, filters, sorterFn, records;
 
     	scope = scope || this;
     	// "remote" filtering
     	filters = operation.filters;
     	if (filters.length > 0) {
+	        // Clear any existing filters before applying the current ones.
+    		if(me.recordCache.isFiltered()){
+    			me.recordCache.clearFilter();
+    		}
     		me.recordCache.filter(filters);
-    		result.totalRecords = result.total = result.records.length;
     	}else{
     		if(me.recordCache.isFiltered()){
     			me.recordCache.clearFilter();
     		}
     	}
+    	
+    	// The total must be taken after filtering is applied
+    	result.total = result.totalRecords = me.recordCache.getCount();
+    	
     	// "remote" sorting
     	sorters = operation.sorters;
     	if (sorters.length > 0) {
